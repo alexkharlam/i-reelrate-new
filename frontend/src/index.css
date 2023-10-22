@@ -1,0 +1,115 @@
+@tailwind base;
+@layer base {
+    .text-secondary {
+        @apply dark:text-gray-300 text-gray-600;
+    }
+
+    .text-tertiary {
+        @apply dark:text-gray-400 text-gray-500;
+    }
+
+    .markdown-editor {
+        @apply bg-primary-300;
+    }
+
+    p {
+        @apply text-lg;
+    }
+
+    h1 {
+        @apply text-4xl lg:mb-3;
+    }
+
+    h2 {
+        @apply text-3xl mb-2;
+    }
+
+    h3 {
+        @apply text-2xl mb-2;
+    }
+
+    h4 {
+        @apply text-2xl mb-2;
+    }
+
+    h5 {
+        @apply text-1xl mb-2;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        @apply font-semibold text-gray-800 dark:text-gray-200;
+    }
+
+    .review p {
+        @apply mt-2 lg:mt-2.5 dark:text-gray-200 text-gray-600;
+    }
+
+    .review h1 {
+        @apply text-4xl mt-3 lg:mt-4.5;
+    }
+
+    .review h2 {
+        @apply text-3xl mt-3 lg:mt-4;
+    }
+
+    .review h3 {
+        @apply text-2xl mt-3 lg:mt-3.5;
+    }
+
+    .review h4 {
+        @apply text-2xl mt-3 lg:mt-3.5;
+    }
+
+    .review h5 {
+        @apply text-1xl mt-3 lg:mt-3.5;
+    }
+
+    .review hr {
+        @apply border-gray-600 mt-3;
+    }
+
+    .review blockquote {
+        @apply p-3 text-2xl bg-gray-800 border-l-4 border-gray-300 mb-3;
+    }
+
+    .review blockquote p {
+        @apply text-lg p-2 font-semibold bg-gray-700 rounded-sm;
+    }
+
+    .review ul,
+    .review ol {
+        @apply ml-2.5 mb-2;
+    }
+
+    .review ul {
+        @apply list-disc;
+    }
+
+    .review ol {
+        @apply list-decimal;
+    }
+
+    .review li {
+        @apply mb-2;
+    }
+
+    .review pre {
+        @apply bg-gray-800 p-2 rounded-sm mb-2.5;
+    }
+
+    .review code {
+        @apply bg-gray-800 p-1 rounded-sm;
+    }
+    .review a {
+        @apply font-bold dark:text-primary-700 text-primary-600 hover:underline;
+    }
+    .review img {
+        @apply max-h-8 h-full inline-block rounded-sm mb-2.5 mr-2;
+    }
+}
+@tailwind components;
+@tailwind utilities;
